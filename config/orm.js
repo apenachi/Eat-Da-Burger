@@ -24,6 +24,14 @@ module.exports = {
 			};
 			callback(false, rows);
 		});
+	},
+	deleteOne : function(id, callback) {
+		connection.query('DELETE FROM burgers WHERE Id = ?', id, function(err, rows) {
+			if(err) {
+				callback(err);
+			};
+			callback(false, rows);
+		});
 	}
 }
 

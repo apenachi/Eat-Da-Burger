@@ -9,6 +9,9 @@ var burger = {
 	},
 	put : function(id, callback) {
 		orm.updateOne(id, callback);
+	},
+	delete : function(id, callback) {
+		orm.deleteOne(id, callback);
 	}
 }
 

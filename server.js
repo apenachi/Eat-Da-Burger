@@ -9,7 +9,7 @@ var path = require('path');
 // var orm = require('./config/orm');
 // var burger = require('./models/burger');
 // var burgersController = require('./controllers/burgers_controller');
-
+var controller = require('./controllers/burgers_controller');
 var app = express();
 
 app.set('port', process.env.PORT || 8080);
@@ -24,8 +24,6 @@ app.use(methodOverride('_method'))
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
-
-var controller = require('./controllers/burgers_controller');
 
 controller(app);
 

@@ -25,6 +25,12 @@ var burgers_controllers = function(app) {
 				res.redirect('/');
 			});
 		});
+		app.delete('/burger', function(req, res) {
+			burger.delete(req.body.id, function(err, results) {
+				if(err) {throw err};
+				res.redirect('/');
+			});
+		});		
 	// index : function(app) {
 	// 	burger.get('burgers', function(err, results){
 	// 		if(err) {throw err;}
