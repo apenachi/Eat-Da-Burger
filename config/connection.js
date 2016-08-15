@@ -2,7 +2,7 @@ var chalk = require('chalk');
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-  host     : 'db4free.net:3306',
+  host     : 'https://www.db4free.net:3306',
   user     : 'apenachi',
   password : 'Octubre=11',
   database : 'burgers_db'	//'db4free.net:3306/burgers_db'
