@@ -3,9 +3,9 @@ var mysql = require('mysql');
 
 var connection = mysql.createConnection({
   host     : 'localhost',
-  user     : 'root',
-  password : '',
-  database : 'burgers_db'
+  user     : 'apenachi',
+  password : 'Octubre=11',
+  database : 'db4free.net:3306/burgers_db' //'burgers_db'
 });
 
 connection.connect(function(err) {
