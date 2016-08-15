@@ -4,7 +4,7 @@ var mysql = require('mysql');
 var connection = mysql.createConnection({
   host     : 'www.db4free.net',
   user     : 'apenachi',
-  password : 'Octubre=11',
+  password : 'just_ask_me',
   database : 'burgers_db'	//'db4free.net:3306/burgers_db'
 });
 
